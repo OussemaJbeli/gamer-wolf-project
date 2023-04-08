@@ -1,0 +1,44 @@
+:root{
+    --color-primary: #C41313;
+}
+/******************game_side*******************/
+.game_side{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+/**************panel cards*************/
+.cards_game_panel{
+    width: 95%;
+}
+/**************card***************/
+.card_game{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #262727;
+    border-radius: 5%;
+    border-style: solid;
+    border-color: var(--color-primary);
+}
+.card_game .img{
+    width: 50%;
+    margin-top: 10%;
+}
+.card_game .img img{
+    width: 100%;
+}
+.card_game .title{
+    font-size: 2vw;
+    color: rgb(153, 149, 149);
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+.card_game .disc{
+    font-size: 1.2vw;
+    color: white;
+    margin: 3% 0 10%;
+}

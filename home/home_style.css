@@ -1,0 +1,159 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --color-primary: #C41313;
+}
+li{
+    list-style: none;  
+    color: aliceblue;  
+    cursor: pointer;
+}
+li:hover{
+    color: var(--color-primary);    
+}
+a{
+    text-decoration: none;
+}
+::-webkit-scrollbar {
+    background: black;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--color-primary); 
+    border-radius: 10px;
+}
+/**************************home***************************/
+.home_page{
+    height: 48vw;
+}
+.backgroundimg{
+    height: 100%;
+    position: fixed;
+    z-index: -1;
+}
+.backgroundimg img{
+    height: 120%;
+    width: 100%;
+}
+/****************header1********************/
+.header1{
+    display: flex;
+    justify-content: space-around;
+    height: 10vw;
+    background-color: #000000cb;
+}
+/****logo***/
+.logo{
+    width: 10%;
+}
+.logo_img{
+    width: 100%;
+}
+/****nav_searsh***/
+.group_search_nav{
+    width: 30%;
+    display: flex;
+}
+.nav1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+/****yout***/
+.yout_botton{
+    margin-top: 1%;
+    border-radius: 5vw;
+    border-style: solid;
+    border-color: var(--color-primary); 
+    width: 10vw;
+    height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+.yout_botton a{
+    color: #fff;
+}
+.yout_botton:hover{
+    background-color: var(--color-primary); 
+}
+/****************swiper*******************/
+.rotate_news{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#swipe_cards{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    overflow: hidden;
+}
+.card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    height: 90%;
+}
+#left_arrow,#rigth_arrow{
+    width: 5vw;
+    height: 5vw;
+    transition: 0.4s ease;
+    visibility: visible;
+}
+#left_arrow img,#rigth_arrow img{
+    width: 100%;
+}
+#left_arrow:hover{
+    transform: scale(1.1);
+}
+#rigth_arrow:hover{
+    transform: scale(1.1);
+}
+/***************header2****************/
+.header2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+    background-color: #262525e1;
+}
+.nav2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    font-size: 1.2vw;
+    text-transform: uppercase;
+}
+.nav2 li{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-style: solid;
+    border-color: transparent transparent transparent rgb(48, 47, 47);
+}
+#game_list{
+    border-color: transparent;
+}
+.header_icons{
+    width: 40%;
+}
